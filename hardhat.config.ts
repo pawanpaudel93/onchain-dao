@@ -34,6 +34,11 @@ const config: HardhatUserConfig = {
     localhost: {
       chainId: 31337,
     },
+    rinkeby: {
+      url: process.env.RINKEBY_URL,
+      accounts: [process.env.PRIVATE_KEY!],
+      chainId: 4,
+    },
   },
   namedAccounts: {
     deployer: {
